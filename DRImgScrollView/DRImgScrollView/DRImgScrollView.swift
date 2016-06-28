@@ -11,6 +11,8 @@ import UIKit
 // 定义闭包
 typealias SendValueClosure = (index:CGFloat) -> Void
 
+let duration:CGFloat = 2.0 // 自动滚动时间间隔
+
 class DRImgScrollView: UIView {
 
     var width:CGFloat = 0.0
@@ -32,7 +34,7 @@ class DRImgScrollView: UIView {
     override init(frame: CGRect) {
         
         scrollView = UIScrollView(frame: frame)
-        pageControl = UIPageControl(frame: CGRectMake(0, 180, 375, 10))
+        pageControl = UIPageControl(frame: CGRectMake(0, 180, frame.size.width, 10))
         
         super.init(frame: frame)
     }
@@ -78,7 +80,7 @@ class DRImgScrollView: UIView {
         
         
         // 时间触发器
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(DRImgScrollView.run), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(Double(duration), target: self, selector: #selector(DRImgScrollView.run), userInfo: nil, repeats: true)
 //        self.performSelector(#selector(DRImgScrollView.fire), withObject: nil, afterDelay: 5)
         timer?.fire()
     }
@@ -180,7 +182,7 @@ extension DRImgScrollView : UIScrollViewDelegate {
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         // 开始timer
-        self.performSelector(#selector(DRImgScrollView.fire), withObject: nil, afterDelay: 2)
+        self.performSelector(#selector(DRImgScrollView.fire), withObject: nil, afterDelay: Double(duration))
     }
     
     func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
