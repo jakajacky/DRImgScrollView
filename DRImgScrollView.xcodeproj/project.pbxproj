@@ -14,6 +14,11 @@
 		F2288F511D1BBF95006178EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2288F4F1D1BBF95006178EC /* LaunchScreen.storyboard */; };
 		F2288F5C1D1BBF95006178EC /* DRImgScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2288F5B1D1BBF95006178EC /* DRImgScrollViewTests.swift */; };
 		F2288F671D1BBF95006178EC /* DRImgScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2288F661D1BBF95006178EC /* DRImgScrollViewUITests.swift */; };
+		F22C8CF11D1D035500ED5881 /* DRImgScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22C8CF01D1D035500ED5881 /* DRImgScrollView.swift */; };
+		F22C8CF61D1D0AA300ED5881 /* image0.png in Resources */ = {isa = PBXBuildFile; fileRef = F22C8CF21D1D0AA300ED5881 /* image0.png */; };
+		F22C8CF71D1D0AA300ED5881 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = F22C8CF31D1D0AA300ED5881 /* image1.png */; };
+		F22C8CF81D1D0AA300ED5881 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = F22C8CF41D1D0AA300ED5881 /* image2.png */; };
+		F22C8CF91D1D0AA300ED5881 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = F22C8CF51D1D0AA300ED5881 /* image3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F2288F621D1BBF95006178EC /* DRImgScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRImgScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2288F661D1BBF95006178EC /* DRImgScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRImgScrollViewUITests.swift; sourceTree = "<group>"; };
 		F2288F681D1BBF95006178EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22C8CF01D1D035500ED5881 /* DRImgScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRImgScrollView.swift; sourceTree = "<group>"; };
+		F22C8CF21D1D0AA300ED5881 /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		F22C8CF31D1D0AA300ED5881 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		F22C8CF41D1D0AA300ED5881 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		F22C8CF51D1D0AA300ED5881 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 			children = (
 				F2288F461D1BBF95006178EC /* AppDelegate.swift */,
 				F2288F481D1BBF95006178EC /* ViewController.swift */,
+				F22C8CEF1D1D02EE00ED5881 /* DRImgScrollView */,
 				F2288F4A1D1BBF95006178EC /* Main.storyboard */,
 				F2288F4D1D1BBF95006178EC /* Assets.xcassets */,
 				F2288F4F1D1BBF95006178EC /* LaunchScreen.storyboard */,
 				F2288F521D1BBF95006178EC /* Info.plist */,
+				F22C8CF21D1D0AA300ED5881 /* image0.png */,
+				F22C8CF31D1D0AA300ED5881 /* image1.png */,
+				F22C8CF41D1D0AA300ED5881 /* image2.png */,
+				F22C8CF51D1D0AA300ED5881 /* image3.png */,
 			);
 			path = DRImgScrollView;
 			sourceTree = "<group>";
@@ -123,6 +138,14 @@
 				F2288F681D1BBF95006178EC /* Info.plist */,
 			);
 			path = DRImgScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		F22C8CEF1D1D02EE00ED5881 /* DRImgScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F22C8CF01D1D035500ED5881 /* DRImgScrollView.swift */,
+			);
+			path = DRImgScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +216,7 @@
 				TargetAttributes = {
 					F2288F421D1BBF95006178EC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X342LX7QRW;
 					};
 					F2288F561D1BBF95006178EC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,8 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22C8CF61D1D0AA300ED5881 /* image0.png in Resources */,
+				F22C8CF71D1D0AA300ED5881 /* image1.png in Resources */,
+				F22C8CF81D1D0AA300ED5881 /* image2.png in Resources */,
 				F2288F511D1BBF95006178EC /* LaunchScreen.storyboard in Resources */,
 				F2288F4E1D1BBF95006178EC /* Assets.xcassets in Resources */,
+				F22C8CF91D1D0AA300ED5881 /* image3.png in Resources */,
 				F2288F4C1D1BBF95006178EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2288F491D1BBF95006178EC /* ViewController.swift in Sources */,
+				F22C8CF11D1D035500ED5881 /* DRImgScrollView.swift in Sources */,
 				F2288F471D1BBF95006178EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DRImgScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollerView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DRImgScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ideabinder.DRImgScrollerView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +519,7 @@
 				F2288F6D1D1BBF95006178EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2288F6E1D1BBF95006178EC /* Build configuration list for PBXNativeTarget "DRImgScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +528,7 @@
 				F2288F701D1BBF95006178EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2288F711D1BBF95006178EC /* Build configuration list for PBXNativeTarget "DRImgScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +537,7 @@
 				F2288F731D1BBF95006178EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
